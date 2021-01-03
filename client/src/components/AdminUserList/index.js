@@ -29,14 +29,14 @@ function UserList() {
       {!loading ? (
         <div className="video-row">
           {filterUsers().map((users) => (
+            console.log(users.adminApproved),
             <AdminUser
               key={users._id}
               _id={users._id}
-              // image={product.image}
               twitchUserName={users.twitchUserName}
               firstName={users.firstName}
               lastName={users.lastName}
-              adminApproved={users.adminApproved}
+              adminApproved={users.adminApproved.toString()}
             />
           ))}
         </div>

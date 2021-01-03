@@ -18,6 +18,8 @@ function AdminUser(item) {
     _id,
   } = item;
 
+  // console.log(adminApproved)
+
   const dispatch = useDispatch();
   const state = useSelector(state => state);
 
